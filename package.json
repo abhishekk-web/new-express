@@ -1,0 +1,24 @@
+{
+  "name": "express-js",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000n\u0000e\u0000w\u0000-\u0000e\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekk-web/new-express.git"
+  },
+  "author": "Abhishek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekk-web/new-express/issues"
+  },
+  "homepage": "https://github.com/abhishekk-web/new-express#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
