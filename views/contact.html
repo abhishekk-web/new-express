@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./shop.css">
 <body>
     
@@ -14,9 +14,9 @@
 
             <ul class="main-header__item-list">
 
-                <li class="main-header__item"><a class="active" href="/shop">Shop</a></li>
+                <li class="main-header__item"><a href="/shop">Shop</a></li>
                 <li class="main-header__item"><a href="/admin/add-product">Add product</a></li>
-                <li class="main-header__item"><a href="/contact">Contact</a></li>
+                <li class="main-header__item"><a class="active" href="/new/contact">Contact</a></li>
 
             </ul>
             
@@ -25,10 +25,13 @@
     </header>
 
     <main>
-
-        <h1 style="color: black; text-decoration: none;">My products</h1>
-        <p style="color:black; text-decoration: none;">List of all products</p>
-
+        <form action="/success" method="POST">
+            <label>Enter your name</label>
+            <input type="text" name="name">
+            <label>Enter your email Id</label>
+            <input type="email" name="email">
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
 </body>

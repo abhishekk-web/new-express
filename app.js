@@ -18,10 +18,13 @@ app.use(express.static(path.join(__dirname,"public","css")))
 
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
+const contactRoutes = require('./routes/contact');
 
 app.use("/admin",adminRoutes);
 
 app.use("/shop",shopRoutes);
+
+app.use( contactRoutes);
 
 app.use((req, res, next) => {
     res.sendFile(path.join(rootDir, "views", "notFound.html"));
