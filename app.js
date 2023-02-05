@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // })
 
+const errorController = require('./controllers/error');
+
 app.use(express.static(path.join(__dirname,"public","css")))
 
 const adminRoutes = require('./routes/admin');
@@ -26,8 +28,6 @@ app.use("/shop",shopRoutes);
 
 app.use( contactRoutes);
 
-app.use((req, res, next) => {
-    res.sendFile(path.join(rootDir, "views", "notFound.html"));
-})
+app.use(errorController.error);
 
 app.listen(3000);

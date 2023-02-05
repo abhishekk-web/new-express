@@ -3,12 +3,11 @@ const path = require('path');
 
 const rootDir = require('../utils/path');
 
+const shopController = require('../controllers/product');
+
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-    console.log("In the second middleware");
-    res.sendFile(path.join(rootDir,'views', 'shop.html'));
-})
+router.get("/", shopController.getProducts);
 
 
 
